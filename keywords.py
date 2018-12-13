@@ -38,6 +38,7 @@ def find_keywords(text, swords):
 	try:
 		result = keywords(text, words=15, lemmatize=True)
 	except:
+		result = "error"
 		print("error!")
 
 	return result.splitlines()
